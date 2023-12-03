@@ -57,7 +57,7 @@ body {
   }
   /* establishes a white background */
   .main-bkgd {
-    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    background: #ffffff url(..media/images/gulp-bottom-beans.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
   /* sits inside of the white background, centered */
@@ -121,7 +121,7 @@ body {
   }
 
   @media (min-width: 768px) {
-    figure {
+    section, figure {
       max-width: 1200px;
       margin: 0 auto;
     }
