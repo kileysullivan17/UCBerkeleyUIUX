@@ -277,17 +277,17 @@ footer a {
       padding: 2rem 4rem 0 1rem;
     }
 
-    /* Products page styling for large screens */
-  
+  /* Products page styling for large screens */
   .ProductHeader {
     margin: 0;
   }
   
   .ProductMain {
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
    }
   
   .groupimg {
