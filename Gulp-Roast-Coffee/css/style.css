@@ -287,7 +287,6 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     max-width: 1200px;
-    width: 100%;
    }
   
   .groupimg {
