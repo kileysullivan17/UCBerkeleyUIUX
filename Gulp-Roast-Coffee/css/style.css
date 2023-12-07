@@ -1,155 +1,455 @@
+/*for mobile*/
 body {
-    background-color: #082B59;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* make images flexible */
+
+img, 
+picture {
+  width: 100%;
+  display: block;
+  border-radius: .625rem;
+}
+
+
+
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: .625rem solid #d98555;
+
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+nav li {
+  margin: 0 1rem 1rem;
+  font-size: 1.3rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+  margin: 0 0 -1.5rem;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(../images/gulp-bottom-beans.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+main {
+  max-width: 540px;
+  width: 100%;
+  /*
+  width: 100%;
+  */
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  flex-flow: row wrap;
+  */
+
+
   }
-  h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-  }
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-  /* make images flexible */
-  img, 
-  picture {
-    max-width: 100%;
-  }
-  a {
-    color: #59331d;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  header {
-    border-bottom: 10px solid #d98555;
-  }
-  /* navbar styling */
+
+/* Products page styling for mobile */
+  
+.ProductHeader {
+  padding: 2rem 0 0 1rem;
+}    
+
+.ProductMain {
+    padding: 0rem 2rem;
+    margin: 1rem 0 0;
+}  
+
+
+
+.text {
+padding: 1rem 0 0;
+}
+  
+
+article {
+  /*
+  flex-basis: 50%;
+  */
+  text-align: left;
+  margin: 2rem;
+}
+picture {
+  /*
+  flex-grow: 1;
+  margin: 3rem 0 0 0;
+  display: block;
+  flex-basis: 50%;
+  */
+  text-align: center;
+  width: 100%;
+  max-width: 540px;
+  margin: auto 2rem 0 2rem;
+  padding: 0;
+}
+
+picture img {
+  border-radius: .625rem;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: .625rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0 3rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: .2rem solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  /*
+  border-top: 10px solid #d98555;
+  */
+}
+
+.SmallText {
+  font-size: 0.75rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+
+/*-------------------------------------------------------*/
+/* for tablets */
+@media (min-width: 576px) {
+  
   nav ul {
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    text-align: center;
-  }
-  nav li {
-    margin: 0 1rem 1rem 3rem;
-    font-size: 1.3rem;
-  }
-  /* max width on the image in pixels */
-  nav .logo img {
-    max-width: 150px;
-    margin: 0 0 -1.5rem;
-  }
-  /* flex basis on the image container, li */
-  nav .logo {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  nav a:hover {
-    color: #d98555;
-  }
-  /* establishes a white background */
-  .main-bkgd {
-    background: #ffffff url(../images/gulp-bottom-beans.jpg) repeat-x bottom;
-    padding-bottom: 300px;
-  }
-  /* sits inside of the white background, centered */
-  .main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: block;
-/*
-    display: flex;
-    flex-direction: column;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    */
-  }
-  article {
-    flex-basis: 50%;
-  }
-  aside {
-    margin: 3rem 0 0 0;
     /*
-    display: block;
-    */
-    flex-basis: 50%;
-    max-width: 100%;
-    border-radius: .625rem;
-    margin: 0;
-    padding: 0;
-  }
-  aside img {
-    border-radius: .625rem;
-  }
-  .button {
-    display: inline-block;
-    background-color: #59331D;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin: 0;
-    color: #f2f2f2;
-    text-decoration: none;
-    border: 3px solid #59331d;
-  }
-  .button:hover {
-    background-color: #f2f2f2;
-    color: #59331d;
-  }
-  footer {
-    color: #f2f2f2;
-    text-align: center;
-    /*
-    border-top: 10px solid #d98555;
+    justify-content: space-between;
     */
   }
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+  .right {
     display: flex;
+    flex-direction: row;
     flex-flow: row wrap;
     justify-content: center;
-  }
-  footer a {
-    color: #f2f2f2;
-    font-size: 2rem;
-    display: block;
-    margin: 0 1rem 3rem 1rem;
+    align-items: center;
   }
 
-  @media (min-width: 768px) {
-    section, figure {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+  main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  }
+ 
+  article {
+    flex-basis: 60%;
+    width: 100%;
+    padding: 0 1rem 0 0;
+  }
+
+  picture {
+    flex-basis: 40%;
+    max-width: 720px;
+    width: 100%;
+    padding: 4rem 1rem 0 0;
+    margin: 4rem 1rem 0 0;
+    /*
+    flex-grow: 1;
+    */
+  }
+  
+  /* Products page styling for tablets */
+ 
+  body {
+    box-sizing: border-box;
+  }
+  
+  
+  .ProductMain {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+   */
     
-    nav ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-    }
     
-    nav li {
-      display: inline-block;
-      font-size: 1.3rem;
-      margin: 1rem 1.5rem 2rem;
-    }
-
-    nav .logo img {
-      margin: 0 0 -1rem;
-      padding: 0;
-    }
-
-
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+  
   }
+  /*
+  .group {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  */ 
+  /*
+    grid-column: span 3;
+    */
+    /*
+    grid-template-columns: (1fr, 2fr);
+    */
+/*
+  } */
+  
+  .groupimg {
+    margin: 2rem 0 0;
+  }
+  /*
+    grid-column-start: 1;
+    grid-column-end: 1;
+    */
+    /*
+    grid-column: span 1;
+    */
+    /*
+    max-width: 296px;
+    width: 100%;
+    *//*
+  }
+    */      
+/*
+  .text {
+    padding: -1rem 0;    
+  }
+*/
+  /*
+    grid-column-start: 2;
+    grid column-end: 3;
+   
+    grid-column: span 2;
+*/    
+    /*
+    width: calc(50%-1rem);
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 0 0 1rem;
+    margin: -1rem auto 0;
+    */
+  
+    
+}
+ 
+/*-------------------------------------------------------------*/
+/* for large screens */
+@media (min-width: 768px) {
+ 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .flex-container ul {
+    display: flex;
+    padding-left: 0;
+    /*
+    flex-direction: row;
+    justify-content: space-between
+    */
+  }
+
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .right {
+    /*
+    align-items: bottom;
+    */
+    margin: 4rem 1rem 0 0;
+  }
+
+  /*
+  .logo-container {
+
+    align-items: left;
+  }
+  */
+  /*
+  .NavLinks {
+    margin-left: auto;
+    */
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
+  
+  
+  /*
+  nav .logo img {
+    align-self: left;
+    margin: 0 0 -1rem;
+    padding: 0;
+  }
+  */
+
+
+
+  main {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+    article {
+      flex-basis: 50%;
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    picture {
+      flex-basis: 50%;
+      max-width: 600px;
+      width: 100%;
+      margin: 5rem 0 0;
+      padding: 2rem 4rem 0 1rem;
+      /*
+      flex-grow: 1;
+      */
+    }
+
+    /* Products page styling for large screens */
+  
+  .ProductHeader {
+    margin: 0;
+  }
+  
+  .ProductMain {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    */
+    gap: 1rem;
+    
+
+    /*
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    */
+    /*
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-flow: row wrap;
+    justify-content: center;
+    */
+   }
+  
+ 
+ 
+  
+  .groupimg {
+    width: 100%;
+    height: auto;
+    margin: 2.5rem 0 0;
+  }
+  
+  .text {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /*
+  .groupimg:nth-child(odd) {
+         
+  }
+  
+  .text:nth-child(even) {
+    
+  }
+  */
+}
