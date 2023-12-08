@@ -285,6 +285,8 @@ footer a {
   .ProductMain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
     gap: 1rem;
     max-width: 1200px;
    }
