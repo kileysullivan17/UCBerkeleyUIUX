@@ -124,7 +124,6 @@ picture img {
 .responsive {
   width: 100%;
   max-width: 400px;
-  height: auto;
 }
 
 .button {
@@ -146,7 +145,7 @@ footer {
   text-align: center;
 }
 
-.SmallText {
+.FooterText {
   font-size: 0.75rem;
 }
 
@@ -175,14 +174,14 @@ footer a {
     flex-direction: column;
   }
 
-  .right {
+  .NavRight {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
   }
-
+/* Central flex box for main content on the pages */
   main {
   display: flex;
   flex-direction: row;
@@ -219,7 +218,7 @@ footer a {
     gap: 1rem;
   }
   
-  .groupimg {
+  .ProdPic {
     margin: 2rem 0 0;
   }
     
@@ -246,7 +245,7 @@ footer a {
     display: inline-block;
   }
 
-  .right {
+  .NavRight {
     margin: 4rem 1rem 0 0;
   }
 
@@ -284,14 +283,15 @@ footer a {
   
   .ProductMain {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     gap: 1rem;
     max-width: 1200px;
    }
   
-  .groupimg {
+  .ProdPic {
     width: 100%;
     height: auto;
     margin: 2.5rem 0 0;
