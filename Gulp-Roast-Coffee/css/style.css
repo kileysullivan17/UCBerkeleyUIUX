@@ -117,10 +117,6 @@ picture {
   padding: 0;
 }
 
-picture img {
-  border-radius: .625rem;
-}
-
 .responsive {
   width: 100%;
   max-width: 400px;
@@ -201,7 +197,7 @@ footer a {
 
   picture {
     flex-basis: 40%;
-    max-width: 720px;
+    max-width: 384px;
     width: 100%;
     padding: 4rem 1rem 0 0;
     margin: 4rem 1rem 0 0;
@@ -283,12 +279,11 @@ footer a {
   
   .ProductMain {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
     max-width: 1200px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
    }
   
   .ProdPic {
