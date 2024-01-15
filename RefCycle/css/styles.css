@@ -1,0 +1,182 @@
+.navbar {
+    background: #628DC5;
+    margin: 2rem;
+    border-radius: 3rem;
+  }
+  
+  .navbar-brand {
+    font-family: 'MuseoModerno', 'Arial', 'Helvetica', san-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #17212C;
+    margin: 0 0 0 1rem;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    background-color: #17212C;
+    border-radius: .625rem;
+    padding: 0.2rem .5rem;
+    margin: 0.5rem 1rem 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: .2rem solid #17212C;
+  }
+  
+  .navbar-toggler {
+    margin: 0 1rem 0 0;
+  }
+  
+  .nav-item {
+    margin: 0 0 0 1rem;
+  }
+  
+  .nav-button:hover {
+    background-color: #ffffff;
+    color: #17212C;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #4469A1 0%, #ffffff 50%, #ffffff 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Arial', 'Helvetica', sans-serif;
+    color: #17212C;
+  }
+  
+  h1 {
+    font-weight: bold;
+    margin: 2rem 0 0.5rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem 2rem;
+    padding: 0;
+  }
+  
+  article {
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  picture {
+    max-width: 100%;
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #484545);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 0;
+  }
+  
+  #image1, #image2, #image3 {
+    height: 13rem;
+    margin-top: 2rem;
+  }
+  
+  p {
+    margin: 1rem;
+  }
+  
+  .bottom-image-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }  
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 3rem 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  footer a {
+    color: #17212C;
+    font-size: 1rem;
+    display: block;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    color: #628DC5;
+  }
+  
+  footer p {
+    font-size: .75rem;
+  }
+  
+  /*-------------------------------------------------------*/
+  /* for tablets */
+  @media (min-width: 576px) {
+    
+    .nav-item {
+      margin: 0;
+    }
+    
+    .nav-button {
+      margin: 0;
+    }
+    
+    main {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: top;
+      margin: 0 2rem 2rem;
+      padding: 0;
+    }
+   
+    article {
+      flex-basis: 50%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    picture {
+      flex-basis: 50%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+  }
+  
+  /*-------------------------------------------------------------*/
+  /* for large screens */
+  @media (min-width: 768px) {
+  
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: top;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+  
+      article {
+        flex-basis: 50%;
+        padding: 0;
+        margin: 0;
+      }
+  
+      picture {
+        flex-basis: 50%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  }
