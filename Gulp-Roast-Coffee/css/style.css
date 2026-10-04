@@ -1,0 +1,301 @@
+/*for mobile*/
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* make images flexible */
+img, 
+picture {
+  width: 100%;
+  display: block;
+  border-radius: .625rem;
+}
+
+a {
+  color: #59331d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: .625rem solid #d98555;
+
+}
+
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+  margin: 0 0 -1.5rem;
+}
+
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: #d98555;
+}
+
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(../images/gulp-bottom-beans.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+main {
+  max-width: 540px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+/* Products page styling for mobile */ 
+.ProductHeader {
+  padding: 2rem 0 0 1rem;
+}    
+
+.ProductMain {
+    padding: 0rem 2rem;
+    margin: 1rem 0 0;
+}  
+
+.text {
+padding: 1rem 0 0;
+}
+
+article {
+  text-align: left;
+  margin: 2rem;
+}
+
+picture {
+  text-align: center;
+  width: 100%;
+  max-width: 540px;
+  margin: auto 2rem 0 2rem;
+  padding: 0;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: .625rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0 3rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: .2rem solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.FooterText {
+  font-size: 0.75rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+
+/*-------------------------------------------------------*/
+/* for tablets */
+@media (min-width: 576px) {
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .NavRight {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+/* Central flex box for main content on the pages */
+  main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  }
+ 
+  article {
+    flex-basis: 60%;
+    width: 100%;
+    padding: 0 1rem 0 0;
+  }
+
+  picture {
+    flex-basis: 40%;
+    max-width: 384px;
+    width: 100%;
+    padding: 4rem 1rem 0 0;
+    margin: 4rem 1rem 0 0;
+  }
+  
+  /* Products page styling for tablets */
+  body {
+    box-sizing: border-box;
+  }
+  
+  .ProductMain {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+  }
+  
+  .ProdPic {
+    margin: 2rem 0 0;
+  }
+    
+}
+ 
+/*-------------------------------------------------------------*/
+/* for large screens */
+@media (min-width: 768px) {
+ 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .flex-container ul {
+    display: flex;
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .NavRight {
+    margin: 4rem 1rem 0 0;
+  }
+
+  main {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+    article {
+      flex-basis: 50%;
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    picture {
+      flex-basis: 50%;
+      max-width: 600px;
+      width: 100%;
+      margin: 5rem 0 0;
+      padding: 2rem 4rem 0 1rem;
+    }
+
+  /* Products page styling for large screens */
+  .ProductHeader {
+    margin: 0;
+  }
+  
+  .ProductMain {
+    display: grid;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+   }
+  
+  .ProdPic {
+    width: 100%;
+    height: auto;
+    margin: 2.5rem 0 0;
+  }
+  
+  .text {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
